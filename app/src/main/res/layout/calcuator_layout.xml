@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/title"
+        android:gravity="center"
+        android:textSize="40sp"
+        />
+
+    <EditText
+        android:id="@+id/first_num"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/enter_the_first_number"
+        android:gravity="center"
+        android:inputType="number" />
+
+
+    <EditText
+        android:id="@+id/second_num"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+        android:hint="@string/enter_the_second_number"
+        android:gravity="center"
+        android:inputType="number"
+        />
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="50dp"
+       >
+   <Button
+       android:id="@+id/add_but"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="+"
+       android:textSize="40sp"
+       android:layout_weight="1"
+       android:onClick="addtwonumber"
+
+       android:backgroundTint="@color/red"
+       />
+    <Button
+        android:id="@+id/sub_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:textSize="40sp"
+        android:layout_weight="1"
+        android:onClick="subtwonumber"
+        />
+    <Button
+        android:id="@+id/times_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*"
+        android:textSize="40sp"
+        android:layout_weight="1"
+
+        />
+    <Button
+        android:id="@+id/divid_but"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="/"
+        android:textSize="40sp"
+        android:layout_weight="1"
+        />
+   </LinearLayout>
+
+    <TextView
+        android:id="@+id/result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="40sp"
+        android:layout_marginTop="60dp"
+        />
+
+    <Button
+        android:id="@+id/change_colour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change BG Colour"
+        android:textSize="30sp"
+        />
+</LinearLayout>
